@@ -4,8 +4,8 @@ import Ketaru from "../../../public/Ketaru.png"
 
 export function Footer(){
     return (
-        <footer className="bg-purple-400/5 rounded-lg shadow m-4">
-            <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <footer className="bg-purple-400/5 rounded-lg shadow-sm m-4 mt-auto">
+            <div className="w-full max-w-(--breakpoint-xl) mx-auto p-4 md:py-8">
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <div className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                         <a href="https://qual.su" target="_blank"><Image src={Qualsu} height="60" alt="Qualsu logo"/></a>
