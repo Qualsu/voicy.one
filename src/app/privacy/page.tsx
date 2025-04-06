@@ -2,8 +2,6 @@
 
 import { useEffect, useState } from 'react'
 import Markdown from 'react-markdown'
-import { Header } from '../components/header'
-import { Footer } from '../components/footer'
 import rehypeRaw from 'rehype-raw'
 import remarkGfm from 'remark-gfm'
 import "../text.css"
@@ -47,18 +45,12 @@ export default function Privacy() {
                     <Loader2 color="#c27aff" className="w-16 h-16 animate-spin" />
                 </div>
             ) : (
-                <div className="flex flex-col min-h-screen">
-                    <Header />
-                    
-                    <div className="flex flex-col grow justify-center items-center">
-                        <div className="text max-w-[1000px] w-full mb-12 pl-4">
-                            <Markdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]}>
-                                {markdown}
-                            </Markdown>
-                        </div>
+                <div className="flex flex-col grow justify-center items-center">
+                    <div className="text max-w-[1000px] w-full mb-12 pl-4">
+                        <Markdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]}>
+                            {markdown}
+                        </Markdown>
                     </div>
-            
-                    <Footer />
                 </div>
             )}
         </>

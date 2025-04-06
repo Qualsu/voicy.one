@@ -7,15 +7,10 @@ import SuccessIcon from "../../../public/Success.png";
 import VoicyIcon from "../../../public/Voicy.png";
 import QuesitionIcon from "../../../public/Question.png";
 import Discord from "../../../public/Discord.svg";
-import { Footer } from "../components/footer";
-import { Header } from "../components/header";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Header />
-
-      <div className="flex flex-col grow justify-center items-center w-full">
+      <>
         <Main />
 
         <div className="flex flex-row justify-center items-center flex-wrap gap-10 my-8">
@@ -36,9 +31,6 @@ export default function Home() {
             buttonColor="#6935FF"
           />
         </div>
-      </div>
-
-      <Footer />
-    </div>
+      </>
   );
 }
